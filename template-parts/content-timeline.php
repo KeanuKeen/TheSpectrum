@@ -12,9 +12,9 @@
   <div class="u-divider--outer"></div>
   <div class="u-divider--inner series-col ">
     <div class="c-timeline-node series-row">
-      <div class="c-timeline-node-dot --right series-row u-center">
+      <div class="c-timeline-node-dot --<?php echo $dir_class ?> series-row u-center">
         <div class="c-timeline-node-meta --date"> <?php echo get_the_date("M. j"); ?> </div>
-        <!-- <div class="c-timeline-node-meta --time"> Time </div> -->  
+        <div class="c-timeline-node-meta --time"> <?php echo get_the_time(); ?> </div>  
       </div>
     </div>
   </div>
@@ -36,7 +36,7 @@
           <div class="c-tag">Investigative</div>
         </div>
       </div>
-    </div>
+    </div>  
   </div>
   <?php if(has_post_thumbnail() ): ?>
   <div class="c-timeline--ts_thumb v-timeline-thumb u-cover_bg series-row u-start_<?php $dir_class ?>">

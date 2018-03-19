@@ -1,4 +1,4 @@
-.c-div_cta-menu-item{
+  .c-div_cta-menu-item{
     margin-right: 24px;
     list-style: none ; //new
     a{ //new
@@ -75,6 +75,7 @@
   
   .c-entry-tag{
     height: 2em;
+    top: -2.35em;
     width: auto;
     font-size: .429em;
   }
@@ -238,15 +239,17 @@ $node-meta-pad: $node-size + 2px;
   background: black;
   border-radius: 100%; 
   &.--left{
-    flex-direction: row;
+    flex-direction: row-reverse !important;
+
   }
   &.--right{
-    flex-direction: row-reverse;
+    flex-direction: row !important;
   }
 }
 .c-timeline-node-meta{
   white-space: nowrap;
-  position: absolute;
+  // position: absolute;
+  margin: 0 .5rem;
   color: #313131;
   font-size: .875rem;
   &:first-child{
@@ -259,6 +262,9 @@ $node-meta-pad: $node-size + 2px;
   }
   &.--date{
     font-weight: 600;
+  }
+  &.--time{
+    color: #929292;
   }
 }
 

@@ -153,7 +153,7 @@
 
 
 			$args = array(
-				'cat' 						=> '7', 
+				'cat' 						=> '6', 
 				'orderby'					=> array(
 					'meta_value'		=> 'ASC',
 				),
@@ -167,7 +167,7 @@
 						'compare'			=> '!='
 					),
 					array(
-						'key'					=> 'event_date',
+						'key'				=> 'event_date',
 						'value'				=> $today_date,
 						'type'				=> 'DATETIME',
 						'compare'			=> '>=',
@@ -201,6 +201,7 @@
 	
 					$n--;
 
+					
 					require(locate_template('template-parts/content-upcoming.php'));
 
 			endwhile;
@@ -253,7 +254,7 @@
 					$post_per_page = 0;
 				endif;
 
-				echo $n;
+				// echo $n;
 
 				if( $n%2 == 0 ){
 					$dir_class = 'right';
