@@ -109,7 +109,7 @@
 		<?php 
 
 			$args = array(
-				'posts_per_page'	=> '-1',
+				'posts_per_page'	=> '6',
 			);
 
 			$the_query = new WP_Query($args);
@@ -231,14 +231,14 @@
 
 		$post_count = 0;
 		$dir_class = null;
-		$post_per_page = 4;
+		$post_per_page = 2;
 		$paged = 1;
 
 		$args = array(
 			'post_type' 			=> 'post',
-			'paged' 					=> $paged,
-			'order'						=> 'DESC',
-			'posts_per_page' 	=> $post_per_page,
+			'paged' 				=> $paged,
+			'order'					=> 'DESC',
+			'posts_per_page' 		=> $post_per_page,
 		);
 
 		$the_query = new WP_Query($args);
@@ -254,7 +254,7 @@
 					$post_per_page = 0;
 				endif;
 
-				// echo $n;
+				echo $n;
 
 				if( $n%2 == 0 ){
 					$dir_class = 'right';
@@ -276,11 +276,6 @@
 
 </section>
 </div>
-	
-	
-
-
-
 
 
 <div class="btn-load_more" data-page="1" data-url="<?php echo admin_url('admin-ajax.php') ?>">

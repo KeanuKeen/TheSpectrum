@@ -18,7 +18,7 @@
 				<div class="c-entry-tag">
 					<div class="relative-cntr series-row --equalize-margin">
 						<div class="c-tag">Campus Activity</div>
-						<div class=" c-tag">Investigative</div>
+						<div class="c-tag">Investigative</div>
 					</div>
 				</div>
 			</div>

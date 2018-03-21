@@ -32,6 +32,7 @@ function ts_init_admin_page(){
 
 
 add_action('admin_menu', 'ts_init_admin_page');
+add_action('admin_head', 'horizontal_post_meta');
 
 
 // Template admin pages functions
@@ -86,9 +87,18 @@ function ts_custom_settings(){
 
 
 
+}
 
-
-
+function horizontal_post_meta(){
+	echo '<style>
+		#acf-group_5a1943e26766 .acf-field-date-time-picker{
+			max-width: 15rem;
+			width: 100%;
+		}
+		#acf-group_5a1943e267663 .acf-fields{
+			display: flex;			
+		}
+	</style>';
 }
 
 

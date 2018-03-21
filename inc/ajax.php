@@ -16,39 +16,51 @@ add_action( 'wp_ajax_ts_load_more', 'ts_load_more' );
 function ts_load_more(){
 
 	$paged = $_POST["page"] + 1;
+	
 
 	global $query;
-	$query = new WP_Query( array(
+	
+	$post_count = 0;
+	$dir_class = null;
+	$post_per_page = 2;
 
-		'post_type' 		=> 'post',
-		'paged' 			=> $paged,
-		'order'				=> 'DESC',
-		'posts_per_page' 	=> 1 //get all posts
+	$args = array(
+		'post_type' 			=> 'post',
+		'paged' 					=> $paged,
+		'order'						=> 'DESC',
+		'posts_per_page' 	=> $post_per_page,
+	);
 
-	) );
+	$the_query = new WP_Query($args);
+	$post_count_total = $the_query -> found_posts;
+	$post_count_page = $the_query -> post_count;
+	$n = $post_count_total - ($paged - 1)*$post_per_page;
+	$dir_class = null;
 
-	if( $query -> have_posts() ):
-		while( $query -> have_posts() ): $query -> the_post();
-			
-				_e('<br>', 'textdomain'); ?>
-				
-				<div class="<?php echo 'title' ?>">
-					<a href="<?php echo the_permalink() ?>">
-						<?php the_title(); ?>
-					</a>
-				</div>
-				<div class="<?php echo 'body' ?>"><?php the_content(); ?></div>
-				<div class="<?php echo 'category' ?>"><?php the_category(); ?></div>
-				<div class="<?php echo 'date' ?>"><?php the_date(); ?></div>
+	if( $the_query -> have_posts() ):
+		while( $the_query -> have_posts() ): $the_query -> the_post();
 
-				<?php _e('<br>----<br><br>', 'textdomain');
+			if($post_per_page == -1):
+				$post_per_page = 0;
+			endif;
+
+			echo $n;
+
+			if( $n%2 == 0 ){
+				$dir_class = 'right';
+			} else{
+				$dir_class = 'left';
+			}
+
+			$n--;
+
+			require(locate_template('template-parts/content-timeline.php'));
 
 		endwhile;
 	endif;
 
 	wp_reset_postdata();
 
-	die();
 
 }
 
