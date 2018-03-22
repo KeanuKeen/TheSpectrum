@@ -30,7 +30,7 @@ jQuery(document).ready( function($){
 				that.addClass('btn-error');
 			},
 			success: function( response ){
-				$('.ts-posts-container').append( response );
+				$('#cntr-timeline').append( response );
 				that.data('page', page+1);
 				console.log(page);
 				that.removeClass('btn-loading');

@@ -54,11 +54,11 @@
 				<div class="u-timeline-entry-head-text"><?php the_title() ?></div>
 			</div>
 			<div class="c-upcoming-feat-desc"><?php the_excerpt() ?></div>
-			<?php if(has_post_thumbnail() ): ?>
-			<div class="c-timeline--ts_thumb v-timeline-thumb u-cover_bg series-row u-start_<?php $dir_class ?>">
-				<div class="v-timeline-thumb u-timeline--ts_thumb c-entry_post-thumb" style="background-image: url(<?php the_post_thumbnail_url() ?>)"></div>
-			</div>
-			<?php endif; ?>
+			<!-- <div class="v-timeline-thumb c-upcoming-feat-thumb"> -->
+				<?php if( has_post_thumbnail() ): ?>
+					<div class="v-timeline-thumb u-timeline--ts_thumb c-entry_post-thumb" style="background-image: url(<?php the_post_thumbnail_url() ?>)">
+				<?php endif; ?>
+			<!-- </div> -->
 		</div>
 	<?php
 	endif;

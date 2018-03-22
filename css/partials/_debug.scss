@@ -80,7 +80,7 @@
   ////  < DEBUGGING >
   
   .test_box{
-    @include quadrilateral(3);
+    @include quadrilateral(3); 
     @include test_box-bordered(1);
     ~ .series-row > .test_box{ // TODO:90 Use JS for nested test boxes
       @include test_box-bordered(1,1.5);

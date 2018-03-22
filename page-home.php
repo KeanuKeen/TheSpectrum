@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 
+
 <section id="cntr-hero" class="u-single">
-	<div id="hero-thumb" class="c-thumb--main v-thumb-prev">
+	
 		<?php 
 
 			$args = array(
@@ -14,22 +15,24 @@
 			if( $the_query -> have_posts() ):
 				while( $the_query -> have_posts() ): $the_query -> the_post();
 					if( get_field( "hero_post" ) ):
-						_e('<br>', 'textdomain');
-						the_title();
-						?><p><?php the_content();  ?></p><?php
-						the_category();	
-						_e('<br><br>', 'textdomain');
+						
+						require(locate_template('template-parts/content-hero.php'));
+
+						?>
+						
+						<?php
 					endif;
 				endwhile;
 			endif;
 
 		?>
-	</div>
+	
 </section>
 
 <section id="cntr-category" class="series-col u-constraint--main">
 	<div id="cntr-category-table" class="series-col --equalize-border u-center">
-		<div class="series-row u-center --equalize-border --row-trim-padding-upper table--category">
+		<div class="series-row u-center --equalize-border --row-trim-padding-both of_4 table--category">
+			<!-- <div class="test_wrap"> -->
 			<?php 
 				$args = array(
 					'style' 		=> '',
@@ -46,7 +49,37 @@
 				}
 
 			?>
-
+			<!-- </div> -->
+			<div class="o-custom-cat u-center">
+				<div class="c-custom-cat-title">
+					View All categories
+				</div>
+			</div>
+			<div class="o-custom-cat u-center">
+				<div class="c-custom-cat-title">
+					View All categories
+				</div>
+			</div>
+			<div class="o-custom-cat u-center">
+				<div class="c-custom-cat-title">
+					View All categories
+				</div>
+			</div>
+			<div class="o-custom-cat u-center">
+				<div class="c-custom-cat-title">
+					View All categories
+				</div>
+			</div>
+			<div class="o-custom-cat u-center">
+				<div class="c-custom-cat-title">
+					View All categories
+				</div>
+			</div>
+			<div class="o-custom-cat u-center">
+				<div class="c-custom-cat-title">
+					View All categories
+				</div>
+			</div>
 		</div>
 	</div>
 	<div class="series-col --equalize-margin">
