@@ -31,7 +31,7 @@
 
 <section id="cntr-category" class="series-col u-constraint--main">
 	<div id="cntr-category-table" class="series-col --equalize-border u-center">
-		<div class="series-row u-center --equalize-border --row-trim-padding-both of_4 table--category">
+		<div class="series-row u-center --equalize-border --row-trim-padding-both table--category">
 			<!-- <div class="test_wrap"> -->
 			<?php 
 				$args = array(

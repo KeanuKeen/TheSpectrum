@@ -1,5 +1,3 @@
-
-
 jQuery(document).ready( function($){
 
 	/* Ajax Functions */
@@ -42,3 +40,19 @@ jQuery(document).ready( function($){
 	});
 
 });
+
+var table_cat = document.getElementsByClassName("table--category")[0];
+var elem_cat = table_cat.getElementsByClassName("o-custom-cat");
+
+console.log(table_cat.offsetWidth);
+
+table_cat.onresize = () => {
+	console.log(table_cat.offsetWidth);
+}
+
+new ResizeSensor(table_cat, function() {
+    console.log('Changed to ' + table_cat.clientWidth);
+});
+
+
+// console.log(elem_cat);

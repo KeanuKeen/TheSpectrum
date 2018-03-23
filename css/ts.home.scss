@@ -247,24 +247,50 @@
       border-right: none;
     }
   }
-  &.of_4 > .o-custom-cat{
+}
+
+.table--category[min-width~="1000px"]{
+  & > .o-custom-cat{
     &:nth-child(4n+1){
       border-left: none;
+      // border: 1px solid red;
     }
     &:nth-child(-n+4){
       border-top: none;
-    }
-  }
-  &::after{
-    content: '';
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background: white;
-    bottom: 0;
+    }    
   }
 }
+.table--category[min-width~="750px"][max-width~="999px"]{
+  & > .o-custom-cat{
+    &:nth-child(3n+1){
+      border-left: none;
+    }
+    &:nth-child(-n+3){
+      border-top: none;
+    }
+  }
+} 
+.table--category[min-width~="500px"][max-width~="749px"]{
+  & > .o-custom-cat{
+    &:nth-child(2n+1){
+      border-left: none;
+    }
+    &:nth-child(-n+2){
+      border-top: none;
+    }
+  }
+} 
+.table--category[min-width~="250px"][max-width~="499px"]{
+  & > .o-custom-cat{
+    &:nth-child(1n+1){
+      border-left: none;
+    }
+    &:nth-child(-n+1){
+      border-top: none;
+    }
+  }
+} 
+
 
 
 .--equalize-margin-both{
@@ -463,7 +489,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   flex-flow: row wrap;
   max-width: 1000px;
   width: 100%;
+  position: relative;
 }
+
+
+
 
 .hero-title{
   font-size: 1.5rem;

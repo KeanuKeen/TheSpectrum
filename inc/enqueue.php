@@ -18,8 +18,10 @@ function ts_load_admin_scripts( $hook ){
 	wp_register_style( 'ts-home-style', get_template_directory_uri().'/css/ts.home.css ', array(), '1.0.0', 'all' );
 	wp_register_script( 'ts-admin-script', get_template_directory_uri().'/js/ts.admin.js', array('jquery'), '1.0.0', true );
 
+
 	wp_enqueue_style( 'ts-admin-style' );
 	wp_enqueue_script( 'ts-admin-script' );
+	
 
 	wp_enqueue_media();
 
@@ -29,8 +31,13 @@ add_action( 'wp_enqueue_scripts', 'ts_load_admin_scripts' );
 
 function ts_load_scripts(){
 
+	wp_register_script('resize_sensor-script', get_template_directory_uri().'/js/ResizeSensor.js', true);
+	wp_register_script('element_queries-script', get_template_directory_uri().'/js/ElementQueries.js', true);
+
 	wp_enqueue_style( 'ts-home-style', get_template_directory_uri().'/css/ts.home.css', array(), '1.0.0', 'all' );
 	wp_enqueue_script( 'ts-home-script', get_template_directory_uri() . '/js/ts.home.js', array('jquery'), '1.0.0', true );
+	wp_enqueue_script( 'resize_sensor-script' );
+	wp_enqueue_script( 'element_queries-script' );
 	
 }
 
