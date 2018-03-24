@@ -62,24 +62,29 @@
 			</div>
 			<div class="o-custom-cat u-center">
 				<div class="c-custom-cat-title">
-					View All categories
+					4
 				</div>
 			</div>
 			<div class="o-custom-cat u-center">
 				<div class="c-custom-cat-title">
-					View All categories
+					3
 				</div>
 			</div>
 			<div class="o-custom-cat u-center">
 				<div class="c-custom-cat-title">
-					View All categories
+					2
 				</div>
 			</div>
 			<div class="o-custom-cat u-center">
 				<div class="c-custom-cat-title">
-					View All categories
+					1
 				</div>
 			</div>
+			<!-- <div class="o-custom-cat u-center">
+				<div class="c-custom-cat-title">
+					View All categories
+				</div>
+			</div> -->
 		</div>
 	</div>
 	<div class="series-col --equalize-margin">
@@ -286,8 +291,6 @@
 				if($post_per_page == -1):
 					$post_per_page = 0;
 				endif;
-
-				echo $n;
 
 				if( $n%2 == 0 ){
 					$dir_class = 'right';

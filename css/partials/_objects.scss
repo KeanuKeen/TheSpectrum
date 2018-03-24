@@ -21,7 +21,8 @@
   
   .o-custom-cat{
     height: 6.5rem;
-    width: calc(1000px/4);
+    min-width: calc(1000px/4);
+    max-width: 100%;
     border: 2px solid #e3e3e3;
   }
   
