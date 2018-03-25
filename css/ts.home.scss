@@ -28,11 +28,21 @@
 
 @include entry_timeline{
   .u-timeline-entry-head-text{
-
     white-space: nowrap;
-    
-    
   }
+  .c-timeline-node-meta.--time{
+    // visibility: hidden;
+  }
+  .c-timeline-node--line{
+    margin-left: 1.083rem;
+  }
+  #cntr-timeline .c-timeline-node-dot{
+    flex-flow: column !important;
+  }
+  #cntr-timeline .c-timeline-node-meta{
+    margin-left: 5rem;
+  }
+  
   .rpsv-timeline{
     max-width: 100%;
     &.u-timeline-entry--right,&.u-timeline-entry--left{
