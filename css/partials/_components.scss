@@ -243,10 +243,9 @@ $node-meta-pad: $node-size + 2px;
   border-radius: 100%; 
   &.--left{
     flex-direction: row-reverse !important;
-
   }
   &.--right{
-    flex-direction: row !important;
+    flex-direction: row ;
   }
 }
 .c-timeline-node-meta{
@@ -256,12 +255,12 @@ $node-meta-pad: $node-size + 2px;
   color: #313131;
   font-size: .875rem;
   &:first-child{
-    right: $node-size + $node-meta-pad;
+    // right: $node-size + $node-meta-pad;
     text-align: right;
   }
   &:last-child{
     text-align: left;
-    left: $node-size + $node-meta-pad;
+    // left: $node-size + $node-meta-pad;
   }
   &.--date{
     font-weight: 600;
