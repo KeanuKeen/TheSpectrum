@@ -102,12 +102,11 @@
   align-items: flex-start;
   justify-content: flex-end;
   position: relative;
-  margin-bottom: 2em;
+  // margin-bottom: 2em;
   padding-right: .5rem;
   & .c-entry-tag{
-    position: absolute;
-    // top: -2em;
-    right: 2rem;
+    // position: absolute;
+    margin-right: .75rem;
     & .relative-cntr{
       flex-direction: row-reverse;
     }
@@ -138,11 +137,10 @@
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
-  margin-bottom: .75em;
+  // margin-bottom: .75em;
   & .c-entry-tag{
-    position: absolute;
-    // top: -2em;
-    left: 1.5rem;
+    // position: absolute;
+    margin-left: .75rem;
   }
   .v-timeline-entry-desc{
     margin-left: .75rem;

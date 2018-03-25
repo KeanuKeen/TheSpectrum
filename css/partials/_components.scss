@@ -75,14 +75,17 @@
   
   .c-entry-tag{
     height: 2em;
-    top: -2.35em;
+    // top: -2.35em;
+    margin-bottom: 4px;
     width: auto;
     font-size: .429em;
+    flex-flow: column nowrap;
   }
   
   .c-tag{
     margin-right: .333em;
-    flex-shrink: 0;
+    flex-wrap: nowrap;
+    white-space: nowrap;
     border-radius: 5px;
     border: 1px solid $tag-border;
     padding: .333em .833em;
@@ -268,3 +271,6 @@ $node-meta-pad: $node-size + 2px;
   }
 }
 
+.c-fluid-width{
+  max-width: 100%;
+}

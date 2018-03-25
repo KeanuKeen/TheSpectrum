@@ -12,14 +12,14 @@
 	<div class="timeline-compact u-parent-width o-row--timeline u-timeline-entry--right">
 		<div class="u-parent-width u-timeline-entry-head--right">
 			<div class="v-timeline-entry-head">
+				<div class="c-entry-tag">
+						<div class="relative-cntr series-row --equalize-margin">
+							<div class="c-tag">Campus Activity</div>
+							<div class="c-tag">Investigative</div>
+						</div>
+				</div>
 				<div class="u-timeline-entry-head-text">
 					<?php the_title() ?>
-				</div>
-				<div class="c-entry-tag">
-					<div class="relative-cntr series-row --equalize-margin">
-						<div class="c-tag">Campus Activity</div>
-						<div class="c-tag">Investigative</div>
-					</div>
 				</div>
 			</div>
 		</div>

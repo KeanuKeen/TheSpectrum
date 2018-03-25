@@ -31,7 +31,7 @@
 
 <section id="cntr-category" class="series-col u-constraint--main">
 	<div id="cntr-category-table" class="series-col --equalize-border u-center">
-		<div class="series-row u-center --equalize-border --row-trim-padding-both table--category">
+		<div class="series-row u-center --equalize-border --row-trim-padding-both table--category" style="visibility: hidden">
 			<!-- <div class="test_wrap"> -->
 			<?php 
 				$args = array(
@@ -70,16 +70,16 @@
 					3
 				</div>
 			</div>
-			<div class="o-custom-cat u-center">
+			<!-- <div class="o-custom-cat u-center">
 				<div class="c-custom-cat-title">
 					2
 				</div>
-			</div>
-			<div class="o-custom-cat u-center">
+			</div> -->
+			<!-- <div class="o-custom-cat u-center">
 				<div class="c-custom-cat-title">
 					1
 				</div>
-			</div>
+			</div> -->
 			<!-- <div class="o-custom-cat u-center">
 				<div class="c-custom-cat-title">
 					View All categories

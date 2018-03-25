@@ -15,13 +15,13 @@
 		<div class="series-row u-parent-width o-row--timeline u-timeline-entry--<?php echo $dir_class ?>">
 			<div class="u-parent-width series-row u-timeline-entry-head--<?php echo $dir_class ?>">
 				<div class="v-timeline-entry-head">
-					<div class="u-timeline-entry-head-text"><?php the_title() ?></div>
 					<div class="c-entry-tag">
-						<div class="relative-cntr series-row --equalize-margin">
-							<div class="c-tag">Campus Activity</div>
-							<div class=" c-tag">Investigative</div>
-						</div>
+							<div class="relative-cntr series-row --equalize-margin">
+								<div class="c-tag">Campus Activity</div>
+								<div class=" c-tag">Investigative</div>
+							</div>
 					</div>
+					<div class="u-timeline-entry-head-text"><?php the_title() ?></div>
 				</div>
 			</div>
 			<div class="u-divider--inner v-date-inactive series-col c-timeline--ts_date v-dark">
@@ -29,7 +29,7 @@
 				<?php echo $event_month ?>.<?php echo $event_day ?>
 				</span>
 			</div>
-			<div class="test_box-custom-inv u-parent-width"></div>
+			<div class="c-fluid-width u-parent-width"></div>
 		</div>
 
 		<div class="series-col v-dark c-timeline-node--line u-upcoming-timeline-node u-center">
