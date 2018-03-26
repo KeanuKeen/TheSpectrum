@@ -10,7 +10,7 @@
 
 <div class="series-col c-timeline-node--line u-center u-main-timeline-node">
   <div class="u-divider--outer"></div>
-  <div class="u-divider--inner series-col ">
+  <div class="u-divider--inner series-col">
     <div class="c-timeline-node series-row">
       <div class="c-timeline-node-dot --<?php echo $dir_class ?> series-row u-center">
         <div class="c-timeline-node-meta --date"> <?php echo get_the_date("M. j"); ?> </div>

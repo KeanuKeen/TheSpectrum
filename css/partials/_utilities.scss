@@ -103,10 +103,8 @@
   justify-content: flex-end;
   position: relative;
   // margin-bottom: 2em;
-  padding-right: .5rem;
   & .c-entry-tag{
     // position: absolute;
-    margin-right: .75rem;
     & .relative-cntr{
       flex-direction: row-reverse;
     }
@@ -140,14 +138,12 @@
   // margin-bottom: .75em;
   & .c-entry-tag{
     // position: absolute;
-    margin-left: .75rem;
   }
   .v-timeline-entry-desc{
     margin-left: .75rem;
   }
   .v-timeline-entry-head{
     text-align: left;
-    margin-left: .75rem;
   }
   .rpsv-direction{
     flex-direction: row-reverse;

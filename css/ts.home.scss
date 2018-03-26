@@ -28,10 +28,37 @@
 
 @include entry_timeline{
   .u-timeline-entry-head-text{
-
     white-space: nowrap;
-    
-    
+  }
+  .u-timeline-entry-head--left{
+    .c-tag{
+      &:first-child{
+        border-radius: 5px 0 0 0;
+      }
+      &:last-child{
+        border-radius: 0 5px 5px 0;
+      }
+    }
+  }
+  .c-tag.c-tag{
+    margin-left: 0;
+    margin-right: .333rem;
+  }
+  .c-timeline-node--line{
+    margin-left: 1.5rem;
+  }
+  #cntr-timeline .c-timeline-node-dot{
+    flex-flow: column !important;
+  }
+  #cntr-timeline .c-timeline-node-meta{
+    margin-left: 5rem;
+  }
+  .u-timeline--main-head{
+    margin-top: 0;
+  }
+  .rpsv-desc{
+    margin-left: 1.5rem;
+    padding-top: 0 !important ;
   }
   .rpsv-timeline{
     max-width: 100%;
@@ -297,7 +324,6 @@
 
 .rpsv-desc {
   display: none;
-  max-height: 7rem;
   height: auto;
   padding-top: 1.5rem;
 }
