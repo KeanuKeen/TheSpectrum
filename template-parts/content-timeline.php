@@ -25,7 +25,7 @@
 
 <div class="rpsv-timeline u-parent-width u-timeline-entry--<?php echo $dir_class ?>">
 
-    <div class="bp u-parent-width series-row u-timeline--main-head u-timeline-entry-head--<?php echo $dir_class ?>">
+    <div class="u-parent-width series-row u-timeline--main-head u-timeline-entry-head--<?php echo $dir_class ?>">
       <div class="v-timeline-entry-head">
         <div class="c-entry-tag">
             <div class="relative-cntr series-row --equalize-margin">
@@ -43,7 +43,7 @@
     </div>  
     
     
-    <div class="u-timeline--main-thumb bp">
+    <div class="u-timeline--main-thumb">
       <?php if(has_post_thumbnail() ): ?>
         <div class="c-timeline--ts_thumb u-cover_bg series-row u-start_<?php $dir_class ?>">
           <img class="v-timeline-thumb u-timeline--ts_thumb c-entry_post-thumb" src="<?php the_post_thumbnail_url() ?>">
