@@ -90,10 +90,10 @@
 	<div class="series-col --equalize-margin">
 		<?php 
 			$args = array(
-				'style' 							=> '',
-				'hide_title_if_empty' 				=> false,
+				'style' 								=> '',
+				'hide_title_if_empty' 	=> false,
 				'taxonomy' 							=> 'category',
-				'post_per_page' 					=> 4,
+				'post_per_page' 				=> 4,
 			);	
 
 			$categories = get_categories($args);
