@@ -30,11 +30,22 @@
   .u-timeline-entry-head-text{
     white-space: nowrap;
   }
-  .c-timeline-node-meta.--time{
-    // visibility: hidden;
+  .u-timeline-entry-head--left{
+    .c-tag{
+      &:first-child{
+        border-radius: 5px 0 0 0;
+      }
+      &:last-child{
+        border-radius: 0 5px 5px 0;
+      }
+    }
+  }
+  .c-tag.c-tag{
+    margin-left: 0;
+    margin-right: .333rem;
   }
   .c-timeline-node--line{
-    margin-left: 1.083rem;
+    margin-left: 1.5rem;
   }
   #cntr-timeline .c-timeline-node-dot{
     flex-flow: column !important;
@@ -42,7 +53,13 @@
   #cntr-timeline .c-timeline-node-meta{
     margin-left: 5rem;
   }
-  
+  .u-timeline--main-head{
+    margin-top: 0;
+  }
+  .rpsv-desc{
+    margin-left: 1.5rem;
+    padding-top: 0 !important ;
+  }
   .rpsv-timeline{
     max-width: 100%;
     &.u-timeline-entry--right,&.u-timeline-entry--left{
@@ -96,6 +113,21 @@
     }
   }
 };
+
+.rpsv-editors{
+  .u-timeline--ts_thumb{
+    width: 100%;
+    max-width: 100%;
+  }
+  .rpsv-desc{
+    display: flex !important;
+    padding: 0 .7rem;
+  }
+  .u-timeline--main-head{
+    margin-top: 0;
+  }
+}
+
 
 @include entry_compact{
   #cntr-category .o--equalized{
@@ -307,7 +339,6 @@
 
 .rpsv-desc {
   display: none;
-  max-height: 7rem;
   height: auto;
   padding-top: 1.5rem;
 }
@@ -414,11 +445,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
   // justify-content: flex-start;
 }
 
-.pusher{
-  max-width: 4.5rem;
-  width: 100%;
-  // background: red;
-}
+
 
 .ghost-gap{
   height: 100%;
@@ -535,4 +562,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 
 #\37 0{
   background-position: 50% 70% !important;
+}
+
+.test_wrap{
+  display: inline-flex;
+  flex-flow: row nowrap;
+  flex-grow: 0;
+  flex-shrink: 1;
+  // flex-basis: 100%;
+  width: 100%;
+}
+
+.pusher{
+  // max-width: 4.5rem;
+  width: 100%;
+  flex-shrink: 1;
+  // background: red;
 }
