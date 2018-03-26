@@ -167,11 +167,16 @@
 .u-timeline--main-head{
   margin-bottom: 1rem;  
   margin-top: 2.5rem;
+  max-width: 30.5rem;
+  // width: 30.5rem;
+  // flex-basis: 30.5rem;
+  flex-shrink: 1;
+  // flex-grow: 3;
 }
 
 .u-timeline--ts_thumb{
   width: 100%;
-  max-width: calc(24em*1.4);
+  // max-width: calc(24em*1.4);
   height: 24em;
   // flex-shrink: 0;
 }

@@ -56,7 +56,7 @@
 			<div class="c-upcoming-feat-desc"><?php the_excerpt() ?></div>
 			<!-- <div class="v-timeline-thumb c-upcoming-feat-thumb"> -->
 				<?php if( has_post_thumbnail() ): ?>
-					<div class="v-timeline-thumb u-timeline--ts_thumb c-entry_post-thumb" style="background-image: url(<?php the_post_thumbnail_url() ?>)">
+					<img class="v-timeline-thumb u-timeline--ts_thumb c-entry_post-thumb" src="<?php the_post_thumbnail_url() ?>">
 				<?php endif; ?>
 			<!-- </div> -->
 		</div>
