@@ -24,7 +24,8 @@
   
 
 <div class="rpsv-timeline u-parent-width u-timeline-entry--<?php echo $dir_class ?>">
-    <div class="bp u-parent-width series-row u-timeline--main-head u-timeline-entry-head--<?php echo $dir_class ?>">
+
+    <div class="u-parent-width series-row u-timeline--main-head u-timeline-entry-head--<?php echo $dir_class ?>">
       <div class="v-timeline-entry-head">
         <div class="c-entry-tag">
             <div class="relative-cntr series-row --equalize-margin">
@@ -39,16 +40,19 @@
         </div>
         
       </div>  
-    </div>
-  
+    </div>  
     
-    <?php if(has_post_thumbnail() ): ?>
-      <div class="bp c-timeline--ts_thumb v-timeline-thumb u-cover_bg series-row u-start_<?php $dir_class ?>">
-        <div class="v-timeline-thumb u-timeline--ts_thumb c-entry_post-thumb" style="background-image: url(<?php the_post_thumbnail_url() ?>)"></div>
-      </div>
-    <?php endif; ?>
+    
+    <div class="u-timeline--main-thumb">
+      <?php if(has_post_thumbnail() ): ?>
+        <div class="c-timeline--ts_thumb u-cover_bg series-row u-start_<?php $dir_class ?>">
+          <img class="v-timeline-thumb u-timeline--ts_thumb c-entry_post-thumb" src="<?php the_post_thumbnail_url() ?>">
+        </div>
+      <?php endif; ?>
+    </div>
+    
     <div class="rpsv-desc">
-      <div class="v-timeline-entry-desc"    >
+      <div class="v-timeline-entry-desc">
         <?php the_excerpt(); ?>
       </div>
     </div>

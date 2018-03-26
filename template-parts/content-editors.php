@@ -23,7 +23,7 @@
 		</div>
 		<?php if(has_post_thumbnail() ): ?>
 			<div class="c-timeline--ts_thumb v-timeline-thumb u-cover_bg series-row u-start_<?php $dir_class ?>">
-				<div class="v-timeline-thumb u-timeline--ts_thumb c-entry_post-thumb" style="background-image: url(<?php the_post_thumbnail_url() ?>)"></div>
+				<img class="v-timeline-thumb u-timeline--ts_thumb c-entry_post-thumb" src="<?php the_post_thumbnail_url() ?>">
 			</div>
 		<?php endif; ?>
 		<div class="rpsv-desc">
