@@ -149,6 +149,7 @@
 			$args = array(
 				'posts_per_page'	=> '6',
 			);
+			$dir_class = "right";
 
 			$the_query = new WP_Query($args);
 
@@ -158,7 +159,7 @@
 					$is_picked = get_field('editors_pick');
 					
 					if($is_picked):
-						get_template_part( 'template-parts/content', 'editors' );
+						require(locate_template('template-parts/content-editors.php'));
 					endif; 
 
 				endwhile;

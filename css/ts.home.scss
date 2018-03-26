@@ -114,6 +114,21 @@
   }
 };
 
+.rpsv-editors{
+  .u-timeline--ts_thumb{
+    width: 100%;
+    max-width: 100%;
+  }
+  .rpsv-desc{
+    display: flex !important;
+    padding: 0 .7rem;
+  }
+  .u-timeline--main-head{
+    margin-top: 0;
+  }
+}
+
+
 @include entry_compact{
   #cntr-category .o--equalized{
     width: 100%;
